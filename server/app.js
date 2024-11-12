@@ -12,7 +12,7 @@ dotenv.config();
 const app = express();
 
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: ["https://task-management-1lcz.vercel.app"],
   credentials: true  // Allow credentials
 }));
 app.use(express.json());
