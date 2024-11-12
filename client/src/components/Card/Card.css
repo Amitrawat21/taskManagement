@@ -1,0 +1,167 @@
+.cardContainer {
+  background-color: rgb(255, 255, 255);
+  height: 320px;
+  border-radius: 10px;
+  width: 30%;
+  padding: 20px;
+  position: relative;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cardWrapperTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.priority {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.priority h5 {
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cardWrappermid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cardWrappermid p {
+  max-width: 100%;
+  background-color: #f8f8f8;
+  max-height: 100px;
+  padding: 5px;
+  min-height: 120px;
+  border-radius: 4px;
+  overflow-y: auto;
+  word-wrap: break-word; /* Ensures long words break to fit within the container */
+  overflow-wrap: break-word; /* Ensures long words break to fit within the container */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #cccccc #f8f8f8; /* Firefox */
+}
+
+.cardWrappermid p::-webkit-scrollbar {
+  width: 6px; /* Chrome, Safari, and Opera */
+}
+
+.cardWrappermid p::-webkit-scrollbar-track {
+  background: #f8f8f8;
+}
+
+.cardWrappermid p::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+  border-radius: 10px;
+}
+
+.task-date {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.task-title {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.cardWrapperBottom {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.showSettingOption {
+  position: absolute;
+  top: 45px;
+  right: 15px;
+}
+
+@media (max-width: 500px) {
+  .cardContainer {
+    height: 210px;
+
+    width: 30%;
+    padding: 5px;
+    position: relative;
+  }
+
+  .cardWrapper {
+    gap: 5px;
+  }
+
+  .priority .KeyboardDoubleArrowUpIcon {
+    width: 13px;
+  }
+
+  .priority h5 {
+    font-size: 7px;
+  }
+
+  .task-title .CircleIcon {
+    width: 10px;
+  }
+
+  .task-title h2 {
+    font-size: 12px;
+  }
+
+  .cardWrappermid p {
+    font-size: 12px;
+    max-height: 40px;
+    padding: 3px;
+    min-height: 70px;
+  }
+
+  .task-date {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+   width: 80px;
+  }
+
+  .task-date h5{
+    font-size: 8px;
+  }
+
+  .task-date .CalendarMonthIconn{
+height: 12px;
+
+
+}
+ .cardWrapperBottom .StarIcon{
+  height: 15px;
+
+ 
+} 
+.cardWrapperBottom h4{
+  font-size: 8px;
+
+}
+
+.showSettingOption {
+
+  top: 40px;
+ left: 40px;
+}
+
+.showSettingOption {
+
+  top: 25px;
+
+}
+
+
+  
+}

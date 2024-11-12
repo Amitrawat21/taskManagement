@@ -1,0 +1,63 @@
+
+
+.AdminAssignTaskComponent{
+    background-color: rgb(238, 238, 238);
+    padding: 30px 60px 30px 30px;
+    min-height: 100vh;
+}
+
+.listproduct-format-mainkk {
+    display: grid;
+    grid-template-columns:  1fr 7fr 1fr ; /* Six equal columns */
+    gap: 130px; /* Spacing between columns */
+    padding: 20px 0; /* Top and bottom padding */
+    color: #454544; /* Text color */
+    font-size: 15px;
+    font-weight: 600; /* Bold text */
+    /* Centered text alignment */
+  }
+  
+  .listproduct-formatk {
+    align-items: center; /* Center content vertically within each row */
+    font-weight: 500; /* Slightly less bold text */
+  }
+  
+  .listproduct-format-iconk {
+    height: 80px;
+    width: 80px; /* Consistent image size */
+    object-fit: cover; /* Crop or scale image to fit container */
+    /* Circular image */
+  }
+  
+  .listproduct-remove-iconk {
+    cursor: pointer; /* Indicate clickable element */
+    height: 20px; /* Adjust icon size as needed */
+    width: 20px; /* Adjust icon size as needed */
+    margin: 0 auto; /* Center icon horizontally within cell */
+  }
+
+  .listproduct-allproductsk{
+    overflow-y: auto;
+  }
+
+
+  @media (max-width: 500px) {
+    .AdminAssignTaskComponent{
+    
+      padding: 10px 20px 10px 10px;
+     
+  }
+
+  .listproduct-format-mainkk {
+    display: grid;
+    grid-template-columns:  1fr 7fr 1fr ; /* Six equal columns */
+    gap: 50px; /* Spacing between columns */
+    padding: 30px 0; /* Top and bottom padding */
+    color: #454544; /* Text color */
+    font-size: 14px;
+    font-weight: 600; /* Bold text */
+    /* Centered text alignment */
+  }
+
+
+  }

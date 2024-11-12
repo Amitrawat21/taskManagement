@@ -1,0 +1,270 @@
+.UserProfil-container {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 600px;
+  background-color: rgb(255, 255, 255);
+  padding: 25px 20px;
+  gap: 20px;
+}
+
+.UserProfil-container-mid {
+  display: flex;
+  padding: 9px;
+  box-shadow: 3px 5px 5px 2px rgb(217, 217, 217);
+}
+
+.UserProfil-container-mid-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1.5;
+  justify-content: center;
+  align-items: center;
+}
+.UserProfil-container-mid-left img {
+  width: 170px;
+  height: 170px;
+  border-radius: 100px;
+}
+
+.UserProfil-container-mid-left .line {
+  width: 180px;
+}
+
+.UserProfil-container-mid-right {
+  flex: 3;
+}
+
+.UserProfil-container-bottom {
+  background-color: red;
+  position: relative;
+}
+
+.UserProfil-container-mid-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.UserProfil-container-mid-right button {
+  background-color: red;
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  align-self: flex-end;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.aaa {
+  max-height: 250px;
+  overflow-y: scroll; /* Change to scroll instead of auto */
+  scrollbar-width: none; /* For Firefox */
+}
+
+.aaa h1 {
+  background-color: rgb(234, 234, 234);
+  text-align: center;
+  padding: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.aaa::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+
+.listproduct-format-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Six equal columns */
+  gap: 90px; /* Spacing between columns */
+  padding: 20px 0; /* Top and bottom padding */
+  color: #454544; /* Text color */
+  font-size: 15px;
+  font-weight: 600; /* Bold text */
+  /* Centered text alignment */
+}
+
+.listproduct-format {
+  align-items: center; /* Center content vertically within each row */
+  font-weight: 500; /* Slightly less bold text */
+}
+
+.lop {
+  background-color: rgb(247, 247, 247);
+  padding: 8px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.lopp {
+  background-color: rgb(191, 142, 235);
+  padding: 8px;
+  border-radius: 7px;
+  cursor: pointer;
+  color: white;
+}
+
+.listproduct-allproductask {
+  overflow-y: auto;
+}
+
+.listproduct-format-main-bottom {
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr 1fr; /* Six equal columns */
+  gap: 90px; /* Spacing between columns */
+  padding: 20px; /* Top and bottom padding */
+  color: #454544; /* Text color */
+  font-size: 15px;
+  font-weight: 600; /* Bold text */
+  /* Centered text alignment */
+}
+
+.sendTask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(244, 243, 243);
+  width: 400px;
+  padding: 5px;
+  gap: 20px;
+  position: absolute;
+  top: 30%;
+  right: 26.5%;
+}
+
+.taskssShowOption {
+  display: flex;
+  gap: 30px;
+}
+
+.UserCard-container-mid {
+  width: 50%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  margin-left: 30px;
+
+  gap: 10px;
+}
+
+.UserCard-container-mid .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info h3 {
+  font-weight: 700;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.info h4 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@media (max-width: 500px) {
+  .UserProfil-container {
+    width: 300px;
+    height: 500px;
+
+    padding: 5px 5px;
+    gap: 30px;
+  }
+
+  .UserProfil-container-mid {
+    padding: 5px;
+    gap: 1px;
+  }
+
+  .UserProfil-container-mid-left {
+    flex: 0.5;
+  }
+
+  .UserProfil-container-mid-right {
+    display: flex;
+    margin-left: 25px;
+    flex-direction: column;
+  }
+
+  .UserProfil-container-mid-left img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+  }
+  .UserProfil-container-mid-left .line {
+    width: 70px;
+  }
+
+  .UserProfil-container-mid-left h2 {
+    font-size: 14px;
+  }
+
+  .UserProfil-container-mid-left span {
+    font-size: 10px;
+  }
+
+  .info h3 {
+    font-weight: 700;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-size: 14px;
+  }
+  .info h4 {
+    font-size: 11px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+
+  .UserProfil-container-mid-right button {
+    width: 45px;
+    padding: 1px;
+    font-size: 12px;
+
+    margin-right: 1px;
+    margin-top: 10px;
+  }
+
+  .sendTask {
+    width: 200px;
+    padding: 5px;
+    gap: 20px;
+    position: absolute;
+    top: 30%;
+    right: 9%;
+  }
+
+  .taskssShowOption h3 {
+    font-size: 10px;
+  }
+
+  .aaa h1 {
+    font-size: 10px;
+  }
+
+  .listproduct-format-main-bottom {
+    grid-template-columns: 1fr 7fr 1fr 1fr; /* Six equal columns */
+    gap: 35px; /* Spacing between columns */
+
+    font-size: 14px;
+
+    /* Centered text alignment */
+  }
+
+  .listproduct-format-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Six equal columns */
+    gap: 1px; /* Spacing between columns */
+    padding: 20px 0; /* Top and bottom padding */
+    color: #454544; /* Text color */
+    font-size: 12px;
+
+    /* Centered text alignment */
+  }
+
+  .UserCard-container-mid {
+    margin-left: 1px;
+
+    gap: 4px;
+  }
+}

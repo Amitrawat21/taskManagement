@@ -1,0 +1,65 @@
+
+.Dialog-CardContainer{
+    
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 450px;
+    border-radius: 5px;
+
+
+}
+
+.displayNone{
+    display: none;
+}
+
+.Dialog-CardWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.DeleteCardButtom{
+    display: flex;
+    gap: 10px;
+}
+
+.DeleteCardButtom button{
+    padding: 6px 13px 6px 13px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.DeleteCardButtom .DeleteCardButtomDelete{
+    background-color: red;
+    color: white;
+}
+
+@media (max-width: 500px) {
+    .Dialog-CardContainer{
+    
+  
+        padding: 10px;
+        width: 300px;
+    
+    
+    }
+
+    .Dialog-CardWrapper p{
+        font-size: 16px;
+    }
+
+    .Dialog-CardWrapper .HelpIcon{
+        width: 30px;
+        height: 10px;
+        background-color: blue;
+    }
+    
+
+
+}
+
+

@@ -1,0 +1,104 @@
+.list-productk {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full viewport width */
+    background-color: #ffffff; /* White background */
+    padding: 10px 50px; /* Padding for content area */
+    margin: 30px auto; /* Centered margin */
+    border-radius: 6px; /* Rounded corners */
+
+    font-size: 20px;
+
+   
+  }
+
+  .list-productk h3 {
+    background-color: rgb(162, 120, 189);
+    color: #ffffff;
+    width: 120px;
+    padding: 10px 3px;
+    border-radius: 5px;
+    
+  }
+  
+  .listproduct-format-maink {
+    display: grid;
+    grid-template-columns:  5fr 1fr 1fr ; /* Six equal columns */
+    gap: 130px; /* Spacing between columns */
+    padding: 20px 0; /* Top and bottom padding */
+    color: #454544; /* Text color */
+    font-size: 15px;
+    font-weight: 600; /* Bold text */
+    /* Centered text alignment */
+  }
+  
+  .listproduct-formatk {
+    align-items: center; /* Center content vertically within each row */
+    font-weight: 500; /* Slightly less bold text */
+  }
+  
+  .listproduct-format-iconk {
+    height: 80px;
+    width: 80px; /* Consistent image size */
+    object-fit: cover; /* Crop or scale image to fit container */
+    /* Circular image */
+  }
+  
+  .listproduct-remove-iconk {
+    cursor: pointer; /* Indicate clickable element */
+    height: 20px; /* Adjust icon size as needed */
+    width: 20px; /* Adjust icon size as needed */
+    margin: 0 auto; /* Center icon horizontally within cell */
+  }
+
+  .listproduct-allproductsk{
+    overflow-y: auto;
+  }
+
+
+  
+@media (max-width: 800px) {
+  .list-productk h3 {
+    background-color: rgb(162, 120, 189);
+    color: #ffffff;
+    width: 90px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    
+  }
+
+
+
+}
+
+@media (max-width: 500px) {
+  .list-productk {
+ 
+
+    padding: 10px 10px; /* Padding for content area */
+
+
+
+    font-size: 10px;
+
+   
+  }
+  .listproduct-format-maink {
+    grid-template-columns:  1fr 0.5fr 0.5fr ; /* Six equal columns */
+    gap: 50px; /* Spacing between columns */
+    padding: 20px 0; /* Top and bottom padding */
+ 
+
+    font-size: 10px;
+
+    /* Centered text alignment */
+  }
+  
+
+
+}
+
+
+
+  

@@ -1,0 +1,180 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(102, 103, 164);
+}
+
+.loginWrapper {
+  border-radius: 5px;
+  width: 85vw;
+  height: 90vh;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginLeft {
+  flex: 1.5;
+  height: 100%;
+  background-color: rgb(161, 127, 255);
+}
+
+.leftImg {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.loginRight {
+  height: 100%;
+  flex: 2;
+}
+
+.loginRightWrapper {
+  margin: 30px 60px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 30px;
+}
+
+.loginRightWrapper .upper {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 20px;
+  height: 40px;
+}
+
+.upper h5 {
+  padding: 5px 20px;
+  border-radius: 15px;
+  background-color: white;
+  color: rgb(177, 142, 207);
+  border-color: rgb(223, 223, 223);
+  font-weight: 1000;
+  border-width: 2px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-style: solid;
+}
+.no-underline {
+    text-decoration: none;
+  }
+  
+  .no-underline h5 {
+    color: inherit; /* Ensure the text color is inherited to maintain styling */
+  }
+
+.upper p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(177, 142, 207);
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.middle h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.middle p {
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(134, 147, 174);
+}
+
+.loginForm{
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputs span{
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+}
+.inputs input{
+    padding: 10px;
+    border-radius: 7zpx;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(230, 230, 230); 
+  
+    
+}
+.inputs input:hover{
+    border-color: rgb(169, 99, 197); 
+}
+
+.inputs input:focus {
+    border-color: rgb(169, 99, 197); 
+    outline: none; /* This removes the default outline that appears on focus */
+}
+.loginButton{
+    padding: 12px 30px;
+    border-radius: 20px;
+    background-color: rgb(140, 85, 249);
+    color: white;
+    text-align: center;
+    width: 30%;
+    font-weight: 550;
+    border: none;
+  
+}
+
+@media (max-width: 800px) {
+
+  .loginRightWrapper{
+    margin: 10px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 10px;
+
+  }
+
+  .loginRightWrapper .upper{
+    gap: 10px;
+    height: 40px;
+
+  }
+
+  .upper h5 {
+    font-size: 13px;
+  }
+
+  .upper p {
+    font-size: 13px;
+  }
+
+
+  .loginLeft{
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .loginContainer {
+   
+    background-color: rgb(102, 103, 164);
+    height: 100vh;
+  }
+  
+}

@@ -1,0 +1,118 @@
+.taskContainer {
+    background-color: rgb(240, 240, 240);
+    height: 100vh;
+    padding: 80px 20px 20px 20px;
+    overflow: auto;
+    padding: 20px 20px;
+    
+  }
+
+  .closedTask{
+    display: none;
+  }
+  
+
+  .taskWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .taskWrapperTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .taskWrapperTopRight {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 9px 5px 4px;
+    justify-content: center;
+  }
+  
+  .taskWrapperSearch {
+    padding: 3px;
+    border-radius: 7px;
+    background-color: white;
+    width: 40%;
+    display: flex;
+    gap: 6px;
+  }
+  
+  .taskWrapperSearch input {
+    border: none;
+  }
+  
+  .taskWrapperSearch input:focus {
+    border: none;
+    outline: none;
+  }
+  
+  .taskWrapperSign {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .signCircle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: white;
+    width: 30%;
+    padding: 4px;
+    font-size: 23px;
+  }
+  
+  .allTask {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+  }
+  
+  .createTaskOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(156, 156, 156, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .createTaskopen {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+
+  @media (max-width: 500px) {
+
+
+    .taskWrapperSearch input {
+
+      height: 20px;
+      width: 100%;
+    
+    }
+
+    .allTask {
+    
+      gap: 15px;
+  
+    }
+
+    .signCircle {
+    
+      font-size: 13px;
+    }
+
+  }

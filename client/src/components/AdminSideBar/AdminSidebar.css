@@ -1,0 +1,123 @@
+
+
+.sidebarContainer-admin {
+    height: 100vh;
+    width: 16vw;
+    padding: 20px;
+    overflow-y: auto;
+}
+.showSidebar{
+    display: none;
+}
+
+.sidebarWrapper-admin {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.upper-admin {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.upper-admin p {
+    color: rgb(236, 165, 0);
+    padding: 5px;
+    font-weight: 550;
+}
+
+.intro-admin {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.lower-admin {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-admin {
+    display: flex;
+    gap: 5px;
+    padding: 7px;
+    border-radius: 15px;
+    align-items: center;
+    color: rgb(94, 94, 94);
+    text-decoration: none;
+    cursor: pointer;
+ 
+}
+
+.section-admin:hover{
+    background-color: rgb(238, 203, 171);
+    color: white;
+
+}
+.section-admin.focused-admin {
+    background-color: rgb(237, 155, 23);
+    color: white;
+}
+
+.section-admin a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-admin a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section-admin:hover .MuiSvgIcon-root, 
+.section-admin:hover .MuiSvgIcon-root path {
+    color: white;
+    fill: white;
+}
+
+.link-admin{
+    border: none;
+   
+    text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    .sidebarContainer-admin{
+        height: 100vh;
+        width: 45vw;
+    
+        overflow-y: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white; /* Ensure background color is set */
+        z-index: 10000; /* Ensure it appears above other elements */
+        transition: transform 0.3s ease;
+        transform: translateX(0);
+        /* transform: translateX(-100%); */
+      
+    }
+    .noshowSideBar{
+        display: none;
+       
+     }
+    .showSidebar{
+        display: flex;
+       position: absolute;
+        z-index: 100000;
+        top: 50%;
+        left: 0;
+
+    }
+    .section-admin h4{
+        font-size: 11px;
+    
+    }
+
+
+}

@@ -1,0 +1,261 @@
+.AdminAllUserComponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  gap: 50px;
+  background-color: rgb(234, 234, 234);
+  padding: 30px 30px;
+  min-height: 100vh;
+}
+.alluser-card {
+  display: flex;
+  gap: 10px;
+  width: 270px;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.alluser-card h5 {
+  color: rgb(8, 141, 208);
+  font-weight: 800;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.alluser-card .alluser-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alluser-add-user {
+  width: 12%;
+  position: relative;
+  padding: 7px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(232, 185, 16);
+
+  gap: 10px;
+  align-items: center;
+  position: relative;
+}
+
+.AdminAllUserComponent-top {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+
+  width: 100%;
+}
+
+.AdminAllUserComponent img {
+  width: 100%;
+  height: 65vh;
+}
+
+.userss {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(226, 226, 226);
+  width: 250px;
+  position: absolute;
+  top: 17%;
+  right: 4%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.userss-none {
+  display: none;
+}
+
+.userss .userss-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+}
+.userss-top .userss-top-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.optionss {
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  overflow: auto;
+  width: 250px;
+  scrollbar-width: none;
+}
+
+.optionss-box {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 7px;
+  margin-bottom: 3px;
+}
+.optionss-box-left {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.optionss-box-right {
+  display: flex;
+  gap: 5px;
+}
+
+.optionss-box-right .add-button {
+  background-color: blue;
+  color: white;
+  width: 55px;
+  padding: 3px;
+  border-radius: 4px;
+}
+
+.optionss-box-right .remove-button {
+  background-color: red;
+  color: white;
+  width: 55px;
+  padding: 3px;
+  border-radius: 4px;
+}
+
+.amittt {
+  display: flex;
+  justify-content: flex-start;
+  gap: 73px;
+
+  flex-wrap: wrap;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  display: block;
+  padding: 8px 16px;
+  color: #007bff;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.page-link:hover {
+  background-color: #e9ecef;
+  color: #0056b3;
+}
+
+.page-item.active .page-link {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.page-item.disabled .page-link {
+  color: #6c757d;
+  pointer-events: none;
+  background-color: #fff;
+  border-color: #ddd;
+}
+
+.page-item:first-child .page-link {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.page-item:last-child .page-link {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.GroupIconnk{
+    width: 40px;
+    height: 40px;
+    color: blue;
+  }
+
+
+
+@media (max-width: 500px) {
+ 
+  .AdminAllUserComponent {
+    padding: 10px 10px;
+ 
+  }
+    .alluser-card {
+      
+        gap: 5px;
+        width: 140px;
+   
+       
+        padding: 10px;
+     
+      }
+      .GroupIconnk{
+        width: 40px;
+        height: 20px;
+      }
+
+      .alluser-add-user {
+        width: 34%;
+        position: relative;
+        padding: 4px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(232, 185, 16);
+      
+        gap: 10px;
+        align-items: center;
+        position: relative;
+      }
+
+     
+
+      .amittt {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+  
+        flex-wrap: wrap;
+        
+      }
+
+     
+        .pagination {
+          flex-wrap: wrap;
+        }
+      
+        .page-item {
+          margin: 5px 0;
+        }
+      
+        .page-link {
+          padding: 6px 12px;
+          font-size: 14px;
+        }
+      }
+
+

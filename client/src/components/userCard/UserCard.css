@@ -1,0 +1,99 @@
+
+
+.UserCard-container{
+    background-color: rgb(255, 255, 255);
+    width: 185px;
+    padding: 15px 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px 2px rgb(217, 217, 217);
+}
+
+.UserCard-container-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+   
+
+}
+.UserCard-container-top h6{
+    color: rgb(204, 204, 204);
+}
+
+
+.UserCard-container-top img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    
+}
+
+
+
+.UserCard-container-button{
+    background-color: rgb(205, 167, 242);
+    color: white;
+    padding: 4px 20px;
+    border-radius: 13px;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.ShowSettingOption{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(156, 156, 156, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+}
+
+
+@media (max-width: 500px) {
+    .UserCard-container{
+       
+        width: 100px;
+        padding: 5px 1px;
+    
+      
+        gap: 5px;
+       
+    }
+
+    .UserCard-container-top img{
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+        
+    }
+
+    .UserCard-container-top h4{
+      font-size: 15px;
+    }
+
+    .UserCard-container-button{
+      
+        padding: 4px 10px;
+        
+        font-size: 10px;
+       
+    }
+    
+}
+
+
+

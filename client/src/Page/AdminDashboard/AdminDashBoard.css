@@ -1,0 +1,32 @@
+
+.admin-dashboard{
+  
+    max-height: 100vh;
+    overflow: auto;
+    background-color: red;
+   
+
+   
+    
+    
+}
+
+
+@media (max-width: 500px) {
+    
+.admin-dashboard{
+  width: 345px;
+    max-height: 100vh;
+    overflow: auto;
+    background-color: rgb(60, 255, 0);
+    
+   
+   
+
+   
+    
+    
+}
+
+
+}

@@ -1,0 +1,143 @@
+.trash-list-product {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full viewport width */
+    background-color: #f3f3f3; /* White background */
+    padding: 10px 50px; /* Padding for content area */
+    margin: 30px auto; /* Centered margin */
+    border-radius: 6px; /* Rounded corners */
+     gap: 30px;
+    font-size: 20px;
+    min-height: 90vh;
+
+   
+  }
+
+  .trash-list-product h3 {
+
+    color: #000000;
+  
+    padding: 10px 3px;
+    border-radius: 5px;
+    
+  }
+  
+  .listproduct-format-mainn {
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Six equal columns */
+  gap: 90px; /* Spacing between columns */
+  padding: 20px 0; /* Top and bottom padding */
+  color: #454544; /* Text color */
+  font-size: 15px;
+  font-weight: 600; /* Bold text */
+  /* Centered text alignment */
+  }
+  .listproduct-format-mainn .icons{
+    display: flex;
+   justify-content: space-between;
+    
+
+  }
+  
+  .listproduct-format {
+    align-items: center; /* Center content vertically within each row */
+    font-weight: 500; /* Slightly less bold text */
+  }
+  
+  .listproduct-format-icon {
+    height: 80px;
+    width: 80px; /* Consistent image size */
+    object-fit: cover; /* Crop or scale image to fit container */
+    /* Circular image */
+  }
+  
+  .listproduct-remove-icon {
+    cursor: pointer; /* Indicate clickable element */
+    height: 20px; /* Adjust icon size as needed */
+    width: 20px; /* Adjust icon size as needed */
+    margin: 0 auto; /* Center icon horizontally within cell */
+  }
+
+  .listproduct-allproducts{
+    overflow-y: auto;
+  }
+
+  .trashed-container-top{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .trashed-container-top-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .trashed-container-top-right-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+
+  @media (max-width: 500px) {
+    .trash-list-product {
+      margin: 0px; 
+      width: 350px;
+      padding: 12px;
+    }
+
+    
+  .trash-list-product h3 {
+
+   font-size: 18px;
+   
+    
+  }
+
+  .trashed-container-top-right{
+   
+    gap: 5px;
+  }
+
+  .trashed-container-top-right h5{
+   
+   font-size: 12px;
+  }
+
+    .listproduct-format-mainn {
+    display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr; /* Six equal columns */
+  gap: 5px; /* Spacing between columns */
+  padding: 5px 0; /* Top and bottom padding */
+  color: #454544; /* Text color */
+  font-size: 10px;
+  font-weight: 600; /* Bold text */
+  /* Centered text alignment */
+  }
+
+
+  .listproduct-format-mainn .icons{
+  
+
+    
+
+  }
+
+
+  
+
+
+  
+ 
+
+
+   
+
+}
+
+
+
+  

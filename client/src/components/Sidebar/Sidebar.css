@@ -1,0 +1,199 @@
+.sidebarContainer {
+    height: 100vh;
+    width: 20vw;
+    padding: 20px 30px;
+    overflow-y: auto;
+}
+
+.showSidebar{
+    display: none;
+}
+.hell{
+    display: none;
+}
+
+.sidebarWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.upper {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.upper p {
+    color: rgb(40, 26, 245);
+    padding: 5px;
+    font-weight: 550;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lower {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section {
+    display: flex;
+    gap: 5px;
+    padding: 7px;
+    border-radius: 15px;
+    align-items: center;
+    color: rgb(94, 94, 94);
+    text-decoration: none;
+    cursor: pointer;
+ 
+}
+
+.section:hover{
+    background-color: rgb(168, 198, 226);
+    color: white;
+
+}
+.section.focused {
+    background-color: rgb(59, 59, 233);
+    color: white;
+}
+
+.section a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.section:hover .MuiSvgIcon-root, 
+.section:hover .MuiSvgIcon-root path {
+    color: white;
+    fill: white;
+}
+
+.link{
+    border: none;
+   
+    text-decoration: none;
+}
+
+
+@media (max-width: 800px) {
+    .sidebarContainer{
+        height: 100vh;
+        width: 40vw;
+        padding: 50px 10px;
+        overflow-y: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white; /* Ensure background color is set */
+        z-index: 10000; /* Ensure it appears above other elements */
+        transition: transform 0.3s ease;
+        transform: translateX(0);
+        /* transform: translateX(-100%); */
+       
+
+    }
+
+    .noshowSideBar{
+       display: none;
+      
+    }
+
+    .showSidebar{
+        display: flex;
+       position: absolute;
+        z-index: 100000;
+        top: 50%;
+        left: 0;
+
+    }
+
+    .sidebarWrapper {
+        gap: 60px;
+        margin-top: 30px;
+    }
+    
+    .upper {
+      
+        gap: 12px;
+    }
+
+    .upper p {
+      
+        font-weight: 500;
+    }
+
+    
+.lower {
+ 
+    gap: 30px;
+}
+}
+
+@media (max-width: 500px) {
+    .sidebarContainer{
+        height: 100vh;
+        width: 50vw;
+     padding: 2px 4px;
+        overflow-y: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white; /* Ensure background color is set */
+        z-index: 10000; /* Ensure it appears above other elements */
+        transition: transform 0.3s ease;
+        transform: translateX(0);
+        /* transform: translateX(-100%); */
+       
+
+    }
+
+    .sidebarWrapper {
+       
+        gap: 30px;
+      
+        width: 165px;
+    }
+    .upper p {
+      
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+
+    .section {
+        display: flex;
+        gap: 2px;
+        padding: 1px;
+        border-radius: 15px;
+        width: 155px;
+       
+     
+     
+    }
+
+        
+.lower {
+ 
+    gap: 27px;
+}
+.section h4{
+    font-size: 11px;
+
+}
+    
+}
+
+
+

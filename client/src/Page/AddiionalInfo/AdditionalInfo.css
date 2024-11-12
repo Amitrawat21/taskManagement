@@ -1,0 +1,36 @@
+.AdditionalInfoo{
+width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.AdditionalInfo-wrapper{
+  background-color: rgb(255, 255, 255);
+  padding: 30px 70px;
+    gap: 40px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border-radius: 40px;
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+  
+   
+}
+
+.type-option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.users{
+    width: 200px;
+    height: 250px;
+}
