@@ -14,7 +14,7 @@ const DialogBox = ({ open, setOpen, msg, selected, type }) => {
   };
   const deleteTask = () => {
     setOpen(false)
-    const url = `http://localhost:8000/task/delete-restore/${selected}?actionType=${type}`;
+    const url = `https://taskmanagement-ep8r.onrender.com/task/delete-restore/${selected}?actionType=${type}`;
 
     axios.delete(url).then((response) => {
       

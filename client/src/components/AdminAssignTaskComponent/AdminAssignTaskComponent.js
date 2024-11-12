@@ -15,7 +15,7 @@ const AdminAssignTaskComponent = () => {
     const getData = async () => {
         try {
             const response = await axios.get(
-                `http://localhost:8000/user/Getadminassigntask/${user._id}`
+                `https://taskmanagement-ep8r.onrender.com/user/Getadminassigntask/${user._id}`
             );
             if (response.data.success === false || !response.data.adminAssignedTasks.length) {
                 setData([]); // Set data to empty if there's no success or tasks

@@ -13,7 +13,7 @@ export const getMyUsers = createAsyncThunk(
   async ({ userId, adminId }, thunkAPI) => {
     try {
       
-      const response = await axios.put(`http://localhost:8000/user/addUser/${adminId}`, { userId });
+      const response = await axios.put(`https://taskmanagement-ep8r.onrender.com/user/addUser/${adminId}`, { userId });
       return response.data.allUser; // Ensure this is the correct path to the users array in your response
     } catch (error) {
       console.error('Error fetching users:', error);
@@ -29,7 +29,7 @@ export const getUser = createAsyncThunk(
     async ({  adminId }, thunkAPI) => {
       try {
          
-        const response = await axios.get(`http://localhost:8000/user/adminUser/${adminId}`);
+        const response = await axios.get(`https://taskmanagement-ep8r.onrender.com/user/adminUser/${adminId}`);
         return response.data.myUser; // Ensure this is the correct path to the users array in your response
       } catch (error) {
         console.error('Error fetching users:', error);
@@ -45,8 +45,11 @@ export const getUser = createAsyncThunk(
     'admin/getAdminTask',
     async ({  adminId }, thunkAPI) => {
       try {
+
+    
+       
          
-        const response = await axios.get(`http://localhost:8000/task/adminAllUser/${adminId}`);
+        const response = await axios.get(`https://taskmanagement-ep8r.onrender.com/task/adminAllUser/${adminId}`);
         return response.data.allTasks; // Ensure this is the correct path to the users array in your response
       } catch (error) {
         console.error('Error fetching users:', error);

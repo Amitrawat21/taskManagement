@@ -62,7 +62,7 @@ const Card = ({ item, activeCardId, setActiveCardId, amit }) => {
 
   const setFavourite = async () => {
     const response = await axios.put(
-      `http://localhost:8000/task/favourite/${item._id}`
+      `https://taskmanagement-ep8r.onrender.com/task/favourite/${item._id}`
     );
 
     if (response.status === 200) {

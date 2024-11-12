@@ -27,7 +27,7 @@ const UserProfile = ({ info }) => {
   const SendTask = async (id) => {
     try {
       const response = await axios.put(
-        `http://localhost:8000/user/adminAssignTask/${user._id}`,
+        `https://taskmanagement-ep8r.onrender.com/user/adminAssignTask/${user._id}`,
         {
           id: id,
           task: {
@@ -50,7 +50,7 @@ const UserProfile = ({ info }) => {
   const getDataa = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:8000/user/Getadminassigntask/${info._id}`
+        `https://taskmanagement-ep8r.onrender.com/user/Getadminassigntask/${info._id}`
       );
       setData(response.data.adminAssignedTasks);
     } catch (err) {
@@ -65,7 +65,7 @@ const UserProfile = ({ info }) => {
   const handleDelete = async (id) => {
     try {
       const response = await axios.put(
-        "http://localhost:8000/user/deleteAssignTask",
+        "https://taskmanagement-ep8r.onrender.com/user/deleteAssignTask",
         {
           adminId: user._id,
           userId: info._id,

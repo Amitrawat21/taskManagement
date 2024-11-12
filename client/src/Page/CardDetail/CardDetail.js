@@ -20,7 +20,7 @@ const CardDetail = () => {
 
   useEffect(() => {
     const gettaskInfo = async () => {
-      const res = await axios.get(`http://localhost:8000/task/single/${id}`);
+      const res = await axios.get(`https://taskmanagement-ep8r.onrender.com/task/single/${id}`);
       setaskInfo(res.data.task);
     };
     gettaskInfo();

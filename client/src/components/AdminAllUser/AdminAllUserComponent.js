@@ -33,7 +33,7 @@ const AdminAllUserComponent = () => {
   const fetchAllUsers = async () => {
     try {
       setLoading(true);
-      const response = await axios.get("http://localhost:8000/user/allUser");
+      const response = await axios.get("https://taskmanagement-ep8r.onrender.com/user/allUser");
       setAllUser(response.data.allUser);
     } catch (error) {
       console.error("Error fetching users:", error);
